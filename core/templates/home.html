@@ -3,59 +3,76 @@ template_include("base.html",CORE);
 top();
 ?>
 
-<div class=" col-md-12" style="max-width: 100%; overflow-y: scroll; height: calc(100vh - 0px); color: black">
-    <?php
-    $sales_jsonx = file_get_contents("dbase/sales.json");
-    
-    
-    
-        // Decode the JSON data into a PHP array
-        $sales_data = json_decode($sales_jsonx, true);
-        $i_price = 0;
-        $i_profit = 0;
-        $sell_price = 0;
-    
-        foreach($sales_data as $s_data){
-            $i_price += ($s_data['price'] * $s_data['quantity']);
-
-            //to calculate the Profit
-            $sell_price += (($s_data['price'] * $s_data['s_quantity']) - $s_data['expenses']);
-            
-        }
-        $i_profit = $i_price - $sell_price;
-    ?>
-    <div>
-        <div class="d-flex justify-content-center py-2">
-            <i class="bi bi-gem display-3"></i>
+<div class="py-4 container-md" >
+    <div class="row" style="min-height: 100lvh;">
+        <div class="col-md-8">
+            <h1 class="fw-bold display-5 " id="lead_text" style="word-wrap: break-word; color: var(--theme_color); min-height: 60px;">
+                
+            </h1>
+            <p class="fs-4 w-75" id="lead_textb" style="min-height: 100px;"></p>
+            <div class="d-flex gap-3 ">
+                <button class="btn btn-outline-dark px-3 border-black">Get Started</button>
+                <button class="btn btn-dark px-3 bg-black border-black">Donate Here</button>
+            </div>
         </div>
-    <h1 class="text-center w-100 py-2 sticky-top bg-white px-3">Nosa Product Sales Record</h1>
-    <br>
-    <br>
-    <div class="d-flex justify-content-center align-items-center flex-column w-100 gap-4">
-        <section class="d-flex flex-column gap-2 ">
-            <span style="font-size: 10px;">Total Profit</span>
-            <span style="font-size: 30px;"><?php echo $i_profit; ?></span>
-        </section>
-
-        <section class="d-flex flex-column gap-2 px-2">
-            <span style="font-size: 10px;">Total sales</span>
-            <span style="font-size: 30px;"><?php echo $i_price; ?></span>
-        </section>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="list">
+                <img src="static/images/homepage/946c9c_22c01501dcb241e09fe6cd6f14478d5f~mv2.png" alt="Homepage" >
+                <img src="static/images/homepage/entb.jpeg" alt="Homepage" >
+                <img src="static/images/homepage/bigstock-remote-job-technology-and-peo-363666529-1-1024x640.jpg" alt="Homepage" >
+                <img src="static/images/homepage/UX+design+lessons+online.jpeg" alt="Homepage" >
+                <img src="static/images/homepage/concerned-black-employee-talking-cellphone-looking-laptop-screen-african-american-mobile-phone-having-issues-165581357.webp" alt="Homepage" >
+                
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
-    <div class="px-2">
-        <button onclick="window.location.href = 'record'" class="btn btn-dark rounded-pill w-100 py-2 d-flex gap-3 justify-content-center"><i class="bi bi-plus-circle-fill"></i> <span>Record daily sales</span> </button>
-    <br>
-        <button onclick="window.location.href = 'report'" class="btn btn-dark rounded-pill w-100 py-2 d-flex gap-3 justify-content-center"><i class="bi bi-list"></i> <span>View sales report</span> </button>
-        <br>
-        <button onclick="window.location.href = 'create_product'" class="btn btn-dark rounded-pill w-100 py-2 d-flex gap-3 justify-content-center"><i class="bi bi-plus-circle-fill"></i> <span>Create new product</span> </button>
-        
+    <div class="row py-3">
+        <div class="d-flex justify-content-center">
+            <h2>About us</h2>
+        </div>
     </div>
-   </div>
-
 </div>
+<style>
+    img{
+        border-radius: 16px;
+        border: solid 2px white;
+        width: 100%;
+        margin-bottom: 10px;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3), 5px 4px 10px rgba(100, 100, 0, 0.3);
+        transition: all 0.5s ease;
+    }
+    .list{
+        column-count: 2;
+    }
+    /* THe text animation */
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        var tl = gsap.timeline({ defaults: { duration: 2, ease: "none" } });
 
+        tl.to("#lead_text", {
+        text: {
+            value: "Empowering Young Minds To Thrive And Lead Independent Lives.",
+            chars: "XO",
+            revealDelay: 0.5,
+            speed: 0.3,
+            newClass: "myClass"
+        }
+        })
+        .to("#lead_textb", {
+        text: {
+            value: "Join us in creating the next generation of CEO's, Entrepreneurs and Change-Makers",
+            chars: "XO",
+            revealDelay: 0.5,
+            speed: 0.3,
+            newClass: "myClass"
+        }
+        })
+
+});
+
+   
+</script>
 <?php
 bottom();
 ?>
