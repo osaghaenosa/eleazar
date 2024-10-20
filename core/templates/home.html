@@ -3,34 +3,319 @@ template_include("base.html",CORE);
 top();
 ?>
 
-<div class="py-4 container-md" >
-    <div class="row" style="min-height: 100lvh;">
-        <div class="col-md-8">
-            <h1 class="fw-bold display-5 " id="lead_text" style="word-wrap: break-word; color: var(--theme_color); min-height: 60px;">
-                
-            </h1>
-            <p class="fs-4 w-75" id="lead_textb" style="min-height: 100px;"></p>
-            <div class="d-flex gap-3 ">
-                <button class="btn btn-outline-dark px-3 border-black">Get Started</button>
-                <button class="btn btn-dark px-3 bg-black border-black">Donate Here</button>
+<div class=" container-md justify-content-center align-items-center d-flex flex-column" >
+    <div style="min-height: 100vh;" class="bg-white">
+        <div class="row pt-4" style="background-color: var(--bg-color);" >
+            <div class="col-md-8">
+                <h1 class="fw-bold display-5 " id="lead_text" style="word-wrap: break-word; color: var(--theme_color); min-height: 60px;">
+                    
+                </h1>
+                <p class="fs-4 w-75" id="lead_textb" style="min-height: 100px;"></p>
+                <div class="d-flex gap-3 " id="button_lead" style="opacity: 0;">
+                    <button onclick="loadContent('record')" class="btn btn-outline-dark px-3 border-black">Get Started</button>
+                    <button class="btn btn-dark px-3 bg-black border-black">Donate Here</button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4 py-3 py-md-0">
-            <div class="list">
-                <img src="static/images/homepage/946c9c_22c01501dcb241e09fe6cd6f14478d5f~mv2.png" alt="Homepage" >
-                <img src="static/images/homepage/entb.jpeg" alt="Homepage" >
-                <img src="static/images/homepage/bigstock-remote-job-technology-and-peo-363666529-1-1024x640.jpg" alt="Homepage" >
-                <img src="static/images/homepage/UX+design+lessons+online.jpeg" alt="Homepage" >
-                <img src="static/images/homepage/concerned-black-employee-talking-cellphone-looking-laptop-screen-african-american-mobile-phone-having-issues-165581357.webp" alt="Homepage" >
-                
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="list">
+                    <img src="static/images/homepage/946c9c_22c01501dcb241e09fe6cd6f14478d5f~mv2.png" alt="Homepage" >
+                    <img src="static/images/homepage/entb.jpeg" alt="Homepage" >
+                    <img src="static/images/homepage/bigstock-remote-job-technology-and-peo-363666529-1-1024x640.jpg" alt="Homepage" >
+                    <img src="static/images/homepage/UX+design+lessons+online.jpeg" alt="Homepage" >
+                    <img src="static/images/homepage/concerned-black-employee-talking-cellphone-looking-laptop-screen-african-american-mobile-phone-having-issues-165581357.webp" alt="Homepage" >
+                    
+                </div>
             </div>
         </div>
     </div>
-    <div class="row py-3">
-        <div class="d-flex justify-content-center">
-            <h2>About us</h2>
+    
+    <div class="row py-3 bg-white w-100">
+        <div class="d-flex justify-content-center pb-5">
+            <h2 class="display-6 fw-bold" translate="yes" style="">About us</h2>
+        </div>
+        
+        <div class="col-md-5 p-2 d-flex flex-column gap-3">
+            <div class="rounded-5 bg-black text-white d-flex flex-column p-3 gap-3" style="min-height: 300px;">
+                <div class="d-flex gap-1 flex-column">
+                    <img src="static/images/homepage/mission.png" style="width: 50px; height: initial; border: none;">
+                    <h3 class="fs-2">Mission</h3>
+                </div>
+                <p>
+                    Our mission at Eleazar Alliance Youth Empowerment Initiative is to empower young adults through comprehensive coaching, support, and resources. We aim to help them transition smoothly into adulthood, achieving financial independence and fulfilling lives.
+                </p>
+                
+            </div>
+
+            <div class="rounded-5 bg-black text-white d-flex flex-column p-3 gap-3" style="min-height: 300px;">
+                <div class="d-flex gap-1 flex-column">
+                    <img src="static/images/homepage/vision.png" style="width: 50px; height: initial; border: none;">
+                    <h3 class="fs-2">Vision</h3>
+                </div>
+                <p>
+                    We envision a world filled with young CEOs and multimillionaires who, driven by passion, will coach and financially empower others, creating thriving communities of successful young individuals worldwide.
+                </p>
+                
+            </div>
+        </div>
+        <div class="col-md-7 p-2">
+            <div class="rounded-5 text-white d-flex flex-column p-3 gap-3 bg-black" style="min-height: 100%; ">
+                <div class="d-flex gap-1 flex-row-reverse justify-content-between">
+                    <img src="static/images/homepage/core_values.png" style="width: 50px; height: initial; border: none;">
+                    <h3 class="fs-2">Core Values</h3>
+                </div>
+                <div>
+                    <p style="border-bottom: solid 1px white; display: flex; flex-direction: column; gap: 10px;" class="py-2">
+                        <span class="fs-6 fw-bold">Integrity</span>
+                        <span>We uphold honesty, transparency, and ethical behaviour in all activities related to the Eleazar Alliance Youth Empowerment Initiative.</span>
+                    </p>
+                    <p style="border-bottom: solid 1px white; display: flex; flex-direction: column; gap: 10px;" class="py-2">
+                        <span class="fs-6 fw-bold">Accountability</span>
+                        <span>We take responsibility for our decisions and actions, remaining accountable to our program and stakeholders.</span>
+                    </p>
+                    <p style="border-bottom: solid 1px white; display: flex; flex-direction: column; gap: 10px;" class="py-2">
+                        <span class="fs-6 fw-bold">Personal Growth</span>
+                        <span>We are committed to continual self-improvement and fostering a culture of learning within our organisation.</span>
+                    </p>
+                    <p style="border-bottom: solid 1px white; display: flex; flex-direction: column; gap: 10px;" class="py-2">
+                        <span class="fs-6 fw-bold">Confidentiality</span>
+                        <span>We respect the confidentiality of sensitive information shared within our team.</span>
+                    </p>
+                    <p style="border-bottom: solid 1px white; display: flex; flex-direction: column; gap: 10px;" class="py-2">
+                        <span class="fs-6 fw-bold">Inclusivity</span>
+                        <span>We promote diversity and inclusivity within our team and practices.</span>
+                    </p>
+                </div>
+                
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    
+    <div class="row py-3 bg-white w-100">
+       
+
+        <div class="d-flex justify-content-center pb-5">
+            <h2 class="display-6 fw-bold" translate="yes">Our Services</h2>
+        </div>
+        <div class="col-md-4 p-2">
+            <div class="rounded-4 d-flex flex-column bg-dark align-items-center justify-content-center border border-black" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/coach.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.8);">
+                <div class="px-3 fs-4 fw-bold w-100" style=" position: relative; top: -30px; padding-top: 5px; padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);">Youth Coaching Program</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4 d-flex flex-column bg-dark align-items-center justify-content-center border border-black" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/trading.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.8);">
+                <div class="px-3 fs-4 fw-bold w-100" style=" position: relative; top: -30px; padding-top: 5px; padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);">Financial Literacy Workshops</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4 d-flex flex-column bg-dark align-items-center justify-content-center border border-black" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/teaching.jpg" style="height: 300px; width: initial; border: none; filter: grayscale(0.8);">
+                <div class="px-3 fs-4 fw-bold w-100" style=" position: relative; top: -30px; padding-top: 5px; padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);">Mentorship Programs</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4 d-flex flex-column bg-dark align-items-center justify-content-center border border-black" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/bigstock-remote-job-technology-and-peo-363666529-1-1024x640.jpg" style="height: 300px; width: initial; border: none; filter: grayscale(0.8);">
+                <div class="px-3 fs-4 fw-bold w-100" style=" position: relative; top: -30px; padding-top: 5px; padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);">Entrepreneurship training</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4 d-flex flex-column bg-dark align-items-center justify-content-center border border-black" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/community.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.8);">
+                <div class="px-3 fs-4 fw-bold w-100" style=" position: relative; top: -30px; padding-top: 5px; padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);">Community Engagement</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4 d-flex flex-column bg-dark align-items-center justify-content-center border border-black" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.8);">
+                <div class="px-3 fs-4 fw-bold w-100" style=" position: relative; top: -30px; padding-top: 5px; padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);">Educational Resources</div>
+            </div>
         </div>
     </div>
+
+    <div class="row py-3 bg-white w-100">
+        <div class="d-flex justify-content-center pb-5">
+            <h2 class="display-6 fw-bold" translate="yes" style="">Blogs and Events</h2>
+        </div>
+        <div class="col-md-4 p-2">
+            <div class="rounded-4  bg-dark align-items-center justify-content-center shadow-lg" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.6);">
+                <div class="px-3  w-100" style="font-size: 0.9rem; position: relative; top: -150px; height: 150px !important; padding-top: 5px; padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.9); color: black;">
+                    <aside class="fw-bold">Nasa is not ready for another rover mission at least not now</aside>
+                    <article style="font-size: 0.8rem;">Nasa is not ready for another rover mission at least not now</article>
+                    <div class="d-flex justify-content-between gap-2 pt-4">
+                        <span class="d-flex align-items-center gap-2" style="font-size: 10px;">
+                            <i class="bi bi-eye" style="font-size: 14px;"></i>
+                            <span>17.5k</span>
+                        </span>
+
+                        <span>
+                            <i class="bi bi-link" style="font-size: 16px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4  bg-dark align-items-center justify-content-center shadow-lg" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.6);">
+                <div class="px-3  w-100" style="font-size: 0.9rem; position: relative; top: -150px; height: 150px !important; padding-top: 5px; padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.9); color: black;">
+                    <aside class="fw-bold">Nasa is not ready for another rover mission at least not now</aside>
+                    <article style="font-size: 0.8rem;">Nasa is not ready for another rover mission at least not now</article>
+                    <div class="d-flex justify-content-between gap-2 pt-4">
+                        <span class="d-flex align-items-center gap-2" style="font-size: 10px;">
+                            <i class="bi bi-eye" style="font-size: 14px;"></i>
+                            <span>17.5k</span>
+                        </span>
+
+                        <span>
+                            <i class="bi bi-link" style="font-size: 16px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4  bg-dark align-items-center justify-content-center shadow-lg" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.6);">
+                <div class="px-3  w-100" style="font-size: 0.9rem; position: relative; top: -150px; height: 150px !important; padding-top: 5px; padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.9); color: black;">
+                    <aside class="fw-bold">Nasa is not ready for another rover mission at least not now</aside>
+                    <article style="font-size: 0.8rem;">Nasa is not ready for another rover mission at least not now</article>
+                    <div class="d-flex justify-content-between gap-2 pt-4">
+                        <span class="d-flex align-items-center gap-2" style="font-size: 10px;">
+                            <i class="bi bi-eye" style="font-size: 14px;"></i>
+                            <span>17.5k</span>
+                        </span>
+
+                        <span>
+                            <i class="bi bi-link" style="font-size: 16px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4  bg-dark align-items-center justify-content-center shadow-lg" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.6);">
+                <div class="px-3  w-100" style="font-size: 0.9rem; position: relative; top: -150px; height: 150px !important; padding-top: 5px; padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.9); color: black;">
+                    <aside class="fw-bold">Nasa is not ready for another rover mission at least not now</aside>
+                    <article style="font-size: 0.8rem;">Nasa is not ready for another rover mission at least not now</article>
+                    <div class="d-flex justify-content-between gap-2 pt-4">
+                        <span class="d-flex align-items-center gap-2" style="font-size: 10px;">
+                            <i class="bi bi-eye" style="font-size: 14px;"></i>
+                            <span>17.5k</span>
+                        </span>
+
+                        <span>
+                            <i class="bi bi-link" style="font-size: 16px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4  bg-dark align-items-center justify-content-center shadow-lg" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.6);">
+                <div class="px-3  w-100" style="font-size: 0.9rem; position: relative; top: -150px; height: 150px !important; padding-top: 5px; padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.9); color: black;">
+                    <aside class="fw-bold">Nasa is not ready for another rover mission at least not now</aside>
+                    <article style="font-size: 0.8rem;">Nasa is not ready for another rover mission at least not now</article>
+                    <div class="d-flex justify-content-between gap-2 pt-4">
+                        <span class="d-flex align-items-center gap-2" style="font-size: 10px;">
+                            <i class="bi bi-eye" style="font-size: 14px;"></i>
+                            <span>17.5k</span>
+                        </span>
+
+                        <span>
+                            <i class="bi bi-link" style="font-size: 16px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-2">
+            <div class="rounded-4  bg-dark align-items-center justify-content-center shadow-lg" style="width: auto; height: 300px; overflow: hidden;">
+
+                <img src="static/images/homepage/education.jpeg" style="height: 300px; width: initial; border: none; filter: grayscale(0.6);">
+                <div class="px-3  w-100" style="font-size: 0.9rem; position: relative; top: -150px; height: 150px !important; padding-top: 5px; padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.9); color: black;">
+                    <aside class="fw-bold">Nasa is not ready for another rover mission at least not now</aside>
+                    <article style="font-size: 0.8rem;">Nasa is not ready for another rover mission at least not now</article>
+                    <div class="d-flex justify-content-between gap-2 pt-4">
+                        <span class="d-flex align-items-center gap-2" style="font-size: 10px;">
+                            <i class="bi bi-eye" style="font-size: 14px;"></i>
+                            <span>17.5k</span>
+                        </span>
+
+                        <span>
+                            <i class="bi bi-link" style="font-size: 16px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-3 pb-5 bg-white w-100">
+        <div class="d-flex justify-content-center pb-5">
+            <h2 class="display-6 fw-bold" translate="yes" style="color: var(--theme_color);">Testimonials</h2>
+        </div>
+    </div>
+
+    <div class="row pt-5 pb-5 w-100">
+        <div class="d-flex justify-content-center pb-5">
+            <h2 class="display-6 fw-bold" translate="yes" >Let's Talk</h2>
+        </div>
+        <div class="py-3 d-flex w-100 justify-content-center" style="flex-flow: wrap;">
+            <form class="d-flex flex-column align-items-center justify-content-center w-100 gap-3">
+                <div class="d-flex flex-wrap gap-3 w-100 align-items-center justify-content-center ">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Full Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Enter Full name">
+                        
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter Email">
+                        
+                      </div>
+                </div>
+                
+                <div class="form-group w-75">
+                  <label for="exampleInputPassword1">Your Message</label>
+                  <textarea  class="form-control" id="exampleInputPassword1" placeholder="Your Message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+        </div>
+    </div>
+
 </div>
 <style>
     img{
@@ -55,7 +340,7 @@ top();
             value: "Empowering Young Minds To Thrive And Lead Independent Lives.",
             chars: "XO",
             revealDelay: 0.5,
-            speed: 0.3,
+            speed: 0.8,
             newClass: "myClass"
         }
         })
@@ -63,10 +348,16 @@ top();
         text: {
             value: "Join us in creating the next generation of CEO's, Entrepreneurs and Change-Makers",
             chars: "XO",
-            revealDelay: 0.5,
-            speed: 0.3,
+            revealDelay: 0.7,
+            speed: 0.7,
             newClass: "myClass"
         }
+        })
+        .to("#button_lead", {
+            rotation: 0,
+            opacity:1,
+            y: 10,
+            duration: 3
         })
 
 });
